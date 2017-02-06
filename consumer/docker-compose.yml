@@ -1,0 +1,10 @@
+version: '2'
+services:
+  consumer:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/app/pomodorify-backend
+      - /home/app/pomodorify-backend/node_modules
