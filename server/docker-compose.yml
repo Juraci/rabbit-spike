@@ -1,0 +1,9 @@
+version: '2'
+services:
+  rabbit-server:
+    image: rabbitmq:3.6-management
+    ports:
+      - 5672:5672
+      - 5671:5671
+      - 4369:4369
+      - 15672:15672
